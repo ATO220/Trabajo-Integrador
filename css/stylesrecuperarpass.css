@@ -163,9 +163,13 @@ display: none;
   text-decoration: none;
   color: rgb(28, 222, 222);
 }
+#email{
+    width: 50%;
+}
 /*************FOOTER***************/
 .bloque_footer{
-    position: relative;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
     height: 160px;
     left: -5px;
