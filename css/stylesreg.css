@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 body{
-  //width: 100%;
+  width: 100%;
   background-image:  url(../images/fondo.png);
 
 }
+/*******header********/
 /*******header********/
 .bloque_header{
     width: 100%;
@@ -14,32 +15,30 @@ body{
     padding-top: 10px;
       border: 3px solid rgba(80 , 80, 80,1);
 }
-    header{
-      background-color: rgba(255 , 255, 255,0.8);
-      position: relative;
-    }
+
     /********logo header********/
+    .limkimg{
+      text-decoration: none;
+    }
     .imagen_header{
       width: 20%;
       height: 50px;
-      margin: 5px 20px;
+      margin: 5px 2%;
       float: left;
     }
     /***********buscador header*******/
     .buscador{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    margin: 10px 20px;
+    float: left;
+    width: 45%;
+    margin: 10px;
     }
     .campo_buscar{
-      width: 65%;
+      width: 70%;
       height: 40px;
-      border: 2px solid rgb(150 , 150, 150);
+     border: 2px solid rgb(150 , 150, 150);
     }
     .boton_buscar, .boton_ingresar{
-      width: 15%;
+      width: 20%;
       height: 40px;
       background-color: rgb(150, 150, 150);
       border-radius: 10px;
@@ -47,12 +46,12 @@ body{
     /*********Login header********/
     .boton_ingresar{
       width: 25%;
+      margin-left: 5%;
     }
     .login{
-      width: 25%;
-      position:absolute;
-      right: 3%;
-      margin-left: 5%;
+      width: 27%;
+      float: left;
+      margin-left: 1%;
     }
     .ingreso{
       width: 100%;
@@ -64,47 +63,56 @@ body{
       display: block;
     }
     .campos{
+      width: 65%;
         float: left;
     }
     .linkimg{
         margin-left: 0px;
       font-size: 0em;
     }
-    a, span{
+    header a, span{
         margin-left: 5px;
       font-size: 1em;
-       color:rgb(28, 222, 222);
+      color:rgb(28, 222, 222);
 
     }
+
      /*******SECCION CENTRAL******/
         /*******SLIDER*******/
 .bloque_central{
-    width: 100%;
+    width: 90%;
     position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
     overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+
 }
-.slider{
-  width: 47.5%;
-  margin: 0px 1.25%;
-  float: left;
-  margin-top: 15px;
-display: none;
-}
+
+    .slider{
+        margin-top: 0px;
+        height: 456;
+        margin-left: 0;
+        background-color: rgba(78, 244, 0, 0.54);
+    }
     .slider ul{
-      width: 165%;
         display: flex;
+        width: 330%;
         animation: cambio 20s infinite alternate;
-        overflow: hidden;
     }
     .slider li{
-      width: 100%;
-      list-style: none;
-      float: left;
+        width: 100%;
+        height: 100%;
+        list-style: none;
     }
     .slider img{
         margin-top: 20px;
         margin-left: 0;
-        width: 100%;
+        width: 80vw;
+        height: 400px;
     }
     @keyframes cambio {
         0%{margin-left: 0%;}
@@ -116,34 +124,32 @@ display: none;
         65%{margin-left: -220%;}
         100%{margin-left: -215%}
     }
-
-    .registro{
-      background-color: rgba(80 , 80, 80,0.8);
-      width: 47.5%;
-      margin: 0 1.25%;
-      float: left;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      color: rgb(255, 255, 255);
-      padding-bottom : 15px;
-      font-size: 1.3em;
-      border-radius: 40px;
-        border: 3px solid rgba(80 , 80, 80,1);
-    }
-    .registro h2{
-      text-decoration: none;
-      font-size: 1.6em;
-      color: rgb(94, 193, 236);
-    }
-    .registro h3{
-        color: rgb(157, 255, 142);
-    }
 /***********TEXTO HOME*********/
+.registro{
+  background-color: rgba(80 , 80, 80,0.8);
+  width: 47.5%;
+  margin: 0 1.25%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  padding-bottom : 15px;
+  font-size: 1.3em;
+  border-radius: 40px;
+    border: 3px solid rgba(80 , 80, 80,1);
+}
+.registro h2{
+  text-decoration: none;
+  font-size: 1.6em;
+  color: rgb(94, 193, 236);
+}
+.registro h3{
+    color: rgb(157, 255, 142);
+}
 .bloque_home{
-    display:none;
+  display: none;
     position: relative;
     width: 97%;
     height: inherit;
@@ -153,7 +159,7 @@ display: none;
     border-radius: 40px;
 }
 .texto_home p{
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgb(255, 255, 255);
     text-align: center;
     /*margin: auto;*/
@@ -165,33 +171,108 @@ display: none;
 }
 /*************FOOTER***************/
 .bloque_footer{
-    position: relative;
     width: 100%;
-    height: 160px;
-    left: -5px;
+    height: auto;
     background-color: rgba(80 , 80, 80,1);
     border-radius: 15px;
-      border: 3px solid rgba(80 , 80, 80,1);
+     border: 3px solid rgba(80 , 80, 80,1);
+}
+.bloque_footer div{
+  width: 100%;
 }
 .bloque_footer ul{
-
-  float: left;
-  font-size: 1.1em;
-  margin: 0 5%;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 15%;
 }
 .bloque_footer li{
   margin-top: 10px;
+  font-size: 1.1em;
   font-weight: bold;
 }
-.bloque_footer div{
-  display: block;
-  width: 100%;
-  height: 100px;
-}
+
 .bloque_footer a{
   text-decoration: none;
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 .bloque_footer p{
+  float: left;
   margin-left: 20px;
 }
+@media (max-width: 1000px) {
+  /***********HEADER************/
+.bloque_header{
+  height: auto;
+}
+.imagen_header{
+  float: none;
+  display: block;
+  width: 45%;
+}
+.buscador{
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.login{
+  float: none;
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  width: 46%;
+}
+.bloque_footer ul{
+  margin-left: 8%;
+}
+}
+@media (max-width: 700px) {
+  /***********HEADER************/
+  .bloque_header{
+    height: auto;
+  }
+  .imagen_header{
+    float: none;
+    display: block;
+    width: 90%;
+  }
+  .login{
+    position: static;
+    float: none;
+    display: block;
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .bloque_footer{
+    position: static;
+    background-color: rgba(80 , 80, 80,0);
+    border-radius: 15px;
+    border: 0px solid rgba(80 , 80, 80,0);
+
+  }
+
+
+  .bloque_footer ul{
+    display: block;
+    margin-left: 0%;
+
+  }
+  .bloque_footer ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+    margin-left: -23px;
+    list-style: none;
+    background-color: rgba(80 , 80, 80,1);
+    border-radius: 2px;
+    border-bottom: : 2px solid rgba(255, 255, 255,0.5);
+  }
+  .bloque_footer p{
+    font-size: 1em;
+    text-align: center;
+  }
+  }

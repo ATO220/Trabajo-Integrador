@@ -14,34 +14,30 @@ body{
     padding-top: 10px;
       border: 3px solid rgba(80 , 80, 80,1);
 }
-    header{
 
-
-      background-color: rgba(255 , 255, 255,0.8);
-      position: relative;
-    }
     /********logo header********/
+    .limkimg{
+      text-decoration: none;
+    }
     .imagen_header{
       width: 20%;
       height: 50px;
-      margin: 5px 20px;
+      margin: 5px 2%;
       float: left;
     }
     /***********buscador header*******/
     .buscador{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    margin: 10px 20px;
+    float: left;
+    width: 45%;
+    margin: 10px;
     }
     .campo_buscar{
-      width: 65%;
+      width: 70%;
       height: 40px;
      border: 2px solid rgb(150 , 150, 150);
     }
     .boton_buscar, .boton_ingresar{
-      width: 15%;
+      width: 20%;
       height: 40px;
       background-color: rgb(150, 150, 150);
       border-radius: 10px;
@@ -49,12 +45,12 @@ body{
     /*********Login header********/
     .boton_ingresar{
       width: 25%;
+      margin-left: 5%;
     }
     .login{
-      width: 25%;
-      position:absolute;
-      right: 3%;
-      margin-left: 5%;
+      width: 27%;
+      float: left;
+      margin-left: 1%;
     }
     .ingreso{
       width: 100%;
@@ -66,6 +62,7 @@ body{
       display: block;
     }
     .campos{
+      width: 65%;
         float: left;
     }
     .linkimg{
@@ -148,46 +145,108 @@ body{
 }
 /*************FOOTER***************/
 .bloque_footer{
-    position: relative;
     width: 100%;
-    height: 160px;
-    left: -5px;
+    height: auto;
     background-color: rgba(80 , 80, 80,1);
     border-radius: 15px;
      border: 3px solid rgba(80 , 80, 80,1);
 }
+.bloque_footer div{
+  width: 100%;
+}
 .bloque_footer ul{
-
-  float: left;
-  font-size: 1.1em;
-  margin: 0 5%;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 15%;
 }
 .bloque_footer li{
   margin-top: 10px;
+  font-size: 1.1em;
   font-weight: bold;
 }
-.bloque_footer div{
-  display: block;
-  width: 100%;
-  height: 100px;
-}
+
 .bloque_footer a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 .bloque_footer p{
+  float: left;
   margin-left: 20px;
 }
-@media (max-width: 700px) {
-.bloque_footer{
-    height: 90 hv;
-
+@media (max-width: 1000px) {
+  /***********HEADER************/
+.bloque_header{
+  height: auto;
 }
-.bloque_footer ul {
+.imagen_header{
+  float: none;
+  display: block;
+  width: 45%;
+}
+.buscador{
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.login{
+  float: none;
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  width: 46%;
+}
+.bloque_footer ul{
+  margin-left: 8%;
+}
+}
+@media (max-width: 700px) {
+  /***********HEADER************/
+  .bloque_header{
+    height: auto;
+  }
+  .imagen_header{
     float: none;
     display: block;
-    padding: 10px 100%;
-    margin-bottom: 15px;
-}
+    width: 90%;
+  }
+  .login{
+    position: static;
+    float: none;
+    display: block;
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .bloque_footer{
+    position: static;
+    background-color: rgba(80 , 80, 80,0);
+    border-radius: 15px;
+    border: 0px solid rgba(80 , 80, 80,0);
 
-}
+  }
+
+
+  .bloque_footer ul{
+    display: block;
+    margin-left: 0%;
+
+  }
+  .bloque_footer ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+    margin-left: -23px;
+    list-style: none;
+    background-color: rgba(80 , 80, 80,1);
+    border-radius: 2px;
+    border-bottom: : 2px solid rgba(255, 255, 255,0.5);
+  }
+  .bloque_footer p{
+    font-size: 1em;
+    text-align: center;
+  }
+  }

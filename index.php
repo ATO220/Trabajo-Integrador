@@ -17,7 +17,7 @@
         <!------------- BUSCADOR -------------->
         <div class="Search">
           <form class="buscador" action="index.html" method="post">
-            <input type="text" name="" value="  Que estas buscando?..." class="campo_buscar" >
+            <input type="text" name="" value="" placeholder="  Que estas buscando?..." class="campo_buscar" >
             <input type="submit" name="" value="Buscar" class="boton_buscar">
           </form>
         </div>
@@ -25,8 +25,8 @@
         <div class="login">
           <div class="ingreso">
             <div class="campos">
-              <input type="text" name="" value="  Usuario..." class="campo_login">
-              <input type="text" name="" value="  Contraseña..." class="campo_login">
+              <input type="text" name="" value="" placeholder="  Usuario..." class="campo_login">
+              <input type="text" name="" value="" placeholder="  Contraseña..." class="campo_login">
             </div>
             <input type="submit" name="" value="Ingresar" class="boton_ingresar">
           </div>
