@@ -25,15 +25,17 @@
         <div class="login">
           <div class="ingreso">
             <div class="campos">
-              <input type="text" name="" value="" placeholder="  Usuario..." class="campo_login">
-              <input type="text" name="" value="" placeholder="  Contraseña..." class="campo_login">
+              <form class="" action="login.php" method="post">
+                <input type="text" name="username" value="" placeholder="  Usuario..." class="campo_login">
+                <input type="password" name="password" value="" placeholder="  Contraseña..." class="campo_login">
+              </div>
+              <input type="submit" name="" value="Ingresar" class="boton_ingresar">
             </div>
-            <input type="submit" name="" value="Ingresar" class="boton_ingresar">
-          </div>
+              </form>
 
           <a href="#">Olvidaste tu contraseña?</a>
         <span> / </span>
-          <a href="#">Registrate</a>
+          <a href="registro.php">Registrate</a>
         </div>
       </header>
     </section>
@@ -47,30 +49,12 @@
                 <li><img src="images/Logo_N_G_vector.png" alt=""></li>
             </ul>
         </div>
-<<<<<<< HEAD
-        <div class="registro">
-          <form class="" action="index.html" method="post">
-            <label for="usuario">Usuario: </label><br>
-            <input type="text" name="usuario" id="usuario" value=""><br>
-            <label for="nombre">Nombre: </label><br>
-            <input type="text" name="nombre" id="nombre" value=""><br>
-            <label for="apellido">Apelido: </label><br>
-            <input type="text" name="apellido" id="apellido" value=""><br>
-            <label for="email">Email: </label><br>
-            <input type="text" name="email" id="email" value=""><br>
-            <label for="usuario">Contraseña: </label><br>
-            <input type="password" name="contraseña" id="contraseña" value=""><br>
-          </form>
-
-        </div>
-=======
->>>>>>> d388c8466fa9844267185a9ba226e80f55f9113e
 
         </section>
         <!------------- TEXTO HOME -------------->
   <section class="bloque_home">
       <div class="texto_home">
-          <p><b>Negocio Redondo</b> es un e-commerce dedicada a las compras entre usuarios inscritos a su servicio de compras, ventas y pagos por Internet. Los usuarios pueden vender tanto productos nuevos como usados a precio fijo.<br>Los pagos y transacciones para comprar/vender un producto pueden realizarce por medio de <b>Negocio Redondo</b> con tarjeta de credito, debito o bien acordar con tu comprador/vendedor otra forma de pago.<br>¿Querés comprar o vender algo, que esperas?... Hacelo de manera simple, segura y rápido.<br>          <a href="#"><b>Registrate gratis</b></a>
+          <p><b>Negocio Redondo</b> es un e-commerce dedicada a las compras entre usuarios inscritos a su servicio de compras, ventas y pagos por Internet. Los usuarios pueden vender tanto productos nuevos como usados a precio fijo.<br>Los pagos y transacciones para comprar/vender un producto pueden realizarce por medio de <b>Negocio Redondo</b> con tarjeta de credito, debito o bien acordar con tu comprador/vendedor otra forma de pago.<br>¿Querés comprar o vender algo, que esperas?... Hacelo de manera simple, segura y rápido.<br>          <a href="registro.php"><b>Registrate gratis</b></a>
 </p>
           </div>
   </section>
@@ -89,7 +73,7 @@
             <li><a href="#">Reglas básicas</a></li>
           </ul>
           <ul>
-            <li><a href="#">Registrate</a></li>
+            <li><a href="registro.php">Registrate</a></li>
             <li><a href="#">Ingresar</a></li>
           </ul>
         </div>
