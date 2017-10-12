@@ -33,7 +33,7 @@
             </div>
               </form>
 
-          <a href="#">Olvidaste tu contraseña?</a>
+          <a href="recuperarpass.html">Olvidaste tu contraseña?</a>
         <span> / </span>
           <a href="registro.php">Registrate</a>
         </div>
